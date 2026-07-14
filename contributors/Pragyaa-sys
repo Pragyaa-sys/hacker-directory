@@ -6,5 +6,5 @@ Pragyaa-sys/card.json
   "university": "Raj Kumar goel Institute of Technology",
   "github": "Pragyaa-sys",
   "bio": "Currently working on a React-based Lord of the Rings character showcase app and have made a desktop app using Electron.",
-  "tags": ["Python", "C"],
+  "tags": ["Python", "JavaScript", "C", "React.js"],
 }
