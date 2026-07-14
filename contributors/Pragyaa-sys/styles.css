@@ -1,0 +1,64 @@
+/*
+  Pragya's personal page styles.
+  This file only affects contributors/Pragyaa-sys/index.html — nothing site-wide.
+*/
+
+/* Name fades in with a soft rise, like an opening title card */
+h1 {
+  animation: fadeInUp 0.7s ease-out;
+  background: linear-gradient(135deg, #f2c94c, #e0a83f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Tags: subtle lift + glow on hover */
+.pill {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+.pill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(242, 201, 76, 0.25);
+}
+
+/* Buttons: gold border glow on hover, like catching torchlight */
+.btn-outline {
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.btn-outline:hover {
+  border-color: #f2c94c;
+  color: #f2c94c;
+  transform: translateY(-2px);
+}
+
+/* Slightly airier line spacing for the bio + project text */
+main p {
+  letter-spacing: 0.2px;
+}
+
+/* Projects section gets a gold left-border, like a manuscript margin */
+section {
+  border-left: 3px solid #f2c94c;
+  padding-left: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+section:hover {
+  border-left-color: #ffdb70;
+}
+
+/* Section heading gets a small gold marker, echoing the site's own style */
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 0.5rem;
+  border-radius: 2px;
+  background: #f2c94c;
+}
